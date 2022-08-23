@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h2>Ingrese 2 numeros</h2>
+        <input type="number" id="one">
+        <input type="number" id="two">
+        <button onclick="main()">Calculate</button>
+    </form>
+
+    <button onclick="toggle()">How it works?</button>
+    <div id="container" class="how-off">
+        <p>
+            I use switch because: 
+
+            When you put swith(true) you are comparing if any of the states could be true
+                for example: true = number_1 > number_2
+            
+            
+            we use let message in the function. That means that 'message' only exist inside of the function.
+        
+            Suposse that we are making an app for website we ask the number_1 & number_2 values for solve the exercise
+             using 'document.getElementById()'.
+        </p>
+    </div>
+
+    <script src="./ejercicio1.js"></script>
+    <script>
+        function toggle() {
+
+            const explication = document.getElementById('container')
+            if(explication.className == 'how-off') {
+                explication.className = 'how'
+            } else {
+                explication.className = 'how-off'
+            }
+        }
+    </script>
+</body>
+</html>
